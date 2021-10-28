@@ -1,92 +1,92 @@
 version: "2.0"
-
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
     - hello there
-    - good morning
-    - good evening
+    - servus
+    - hi
     - moin
     - hey there
     - let's go
     - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
+    - gutenmorgen
+    - Guten Tag
+    - hey
 - intent: goodbye
   examples: |
-    - good afternoon
+    - Adios
     - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
+    - tschüssikowski
+    - bis später
+    - gute Nacht
+    - tschüss
+    - Auf Wiedersehen
+    - Einen schönen Tag noch
+    - man sieht sich
     - bye bye
-    - see you later
-
 - intent: affirm
   examples: |
-    - yes
+    - ja
     - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
+    - in der Tat
+    - natürlich
+    - das klingt gut
+    - korrekt
 - intent: deny
   examples: |
-    - no
+    - nö
     - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
+    - niemals
+    - Das glaube ich nicht.
+    - das gefällt mir nicht
+    - auf keinen Fall
+    - nicht wirklich
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
+    - perfekt
+    - großartig
+    - fantastisch
+    - Ich fühle mich wie ein König
+    - wunderbar
+    - Ich fühle mich sehr gut
+    - Ich fühle mich großartig
+    - Ich bin fantastisch
+    - Ich werde die Welt retten
+    - total begeistert
+    - extrem gut
+    - so perfekt
+    - so gut
+    - Alles super!
+    - super
+    - gut
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
+    - mein Tag war furchtbar
+    - Ich bin traurig
+    - Ich fühle mich nicht sehr gut
+    - Ich bin enttäuscht
+    - super traurig
+    - Ich bin so traurig
     - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
+    - sehr traurig
+    - unglücklich
+    - nicht gut
+    - nicht sehr gut
+    - so traaurig
+    - so traurig
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
+    - Bist du ein Bot?
+    - Bist du ein Mensch?
+    - Spreche ich mit einem Bot?
+    - spreche ich mit einem Menschen?
     - am I talking to a bot?
-    - am I talking to a human?
+- intent: out_of_scope
+  examples: |
+    - dasdas
+    - DSGVO
+    - dsgvo
+- intent: greeting
+  examples: |
+    - Hey
+    - hi!
