@@ -1,30 +1,60 @@
 version: "2.0"
-
 stories:
-
 - story: happy path
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
-
-- story: sad path 1
+- story: dsgvo
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
+  - intent: dsgvo
+  - action: utter_dsgvo
+- story: datenverarbeitung
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: verarbeitung
+  - action: utter_verarbeitung
+- story: betroffene_person
+  steps:
+  - intent: betroffene_person
+  - action: utter_betroffene_person
+- story: possibilities
+  steps:
+  - intent: possibilities
+  - action: utter_possibilities
+- story: definitionen
+  steps:
+  - intent: definitionen
+  - action: utter_definitionen
+- story: help
+  steps:
+  - intent: help
+  - action: utter_help
+- story: who_are_you
+  steps:
+  - intent: bot_challange
+  - action: utter_iamabot
+- story: continue
+  steps:
+  - intent: continue
+  - action: utter_continue
+- story: indecent
+  steps:
+  - intent: indecent
+  - action: utter_indecent
+- story: offense
+  steps:
+  - intent: offense
+  - action: utter_offense
+- story: friend
+  steps:
+  - intent: friend
+  - action: utter_friend
+- story: Story from Conversation ID e486e21fcb14496cb6400a3d61dd11ff
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+- story: resart
+  steps:
+  - intent: restart
+  - action: action_restart

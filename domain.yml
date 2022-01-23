@@ -19,6 +19,34 @@ intents:
     use_entities: true
 - bot_challenge:
     use_entities: true
+- out_of_scope:
+    use_entities: true
+- dsgvo:
+    use_entities: true
+- erlaubnis_tatbestande:
+    use_entities: true
+- verarbeitung:
+    use_entities: true
+- betroffene_Person:
+    use_entities: true
+- betroffene_person:
+    use_entities: true
+- possibilities:
+    use_entities: true
+- definitionen:
+    use_entities: true
+- help:
+    use_entities: true
+- continue:
+    use_entities: true
+- bot_challange:
+    use_entities: true
+- indecent:
+    use_entities: true
+- offense:
+    use_entities: true
+- friend:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -29,11 +57,47 @@ responses:
   utter_did_that_help:
   - text: Hat dir das geholfen?
   utter_happy:
-  - text: Gut, weiter so!
+  - text: Wie schön!
   utter_goodbye:
   - text: Auf Wiedersehen
   utter_iamabot:
   - text: Ich bin ein Bot, entwickelt im ITBL Praktikum der TU München.
+  utter_dsgvo:
+  - buttons:
+    - payload: definitionen
+      title: Mehr Definitionen
+    text: Die Datenschutz-Grundverordnung ist eine Verordnung der Europäischen Union, mit der die Regeln zur Verarbeitung personenbezogener Daten durch die meisten Verantwortlichen, sowohl private wie öffentliche, EU-weit vereinheitlicht werden.
+  utter_verarbeitung:
+  - text: 'Folgendes wird alles unter "Datenverarbeitung" verstanden: Erheben, Erfassen, Organisation, Ordnen, Speicherung, Anpassung, Veränderung, Auslesen, Abfragen, Verwendung, Offenlegung, Übermittlung, Bereitstellung, Abgleich , Verknüpfung, Einschränkung, das Löschen, Vernichtung von personenbezogenen Daten'
+  utter_betroffene_person:
+  - buttons:
+    - payload: cool
+      title: Cool
+    text: Jede identifizierbare oder identifizierte Person, deren Daten erhoben und verarbeitet werden
+  - text: Die Person auf die sich die Informationen in den personenbezogene Daten beziehen
+  utter_possibilities:
+  - text: Bisher kann ich noch nicht wahnsinnig viel, aber du kannst mich schon nach Definitionen oder Quellen fragen
+  utter_definitionen:
+  - buttons:
+    - payload: betroffene_person
+      title: Betroffene Person
+    - payload: DSGVO
+      title: DSGVO
+    - payload: verarbeitung
+      title: Datenverarbeitung
+    text: Ich kann dir einige Definitionen liefern!
+  utter_help:
+  - text: Du brauchst Hilfe bei einer Aufgabe oder hast ein technisches Problem? Frage gerne jemanden vom Botty Team oder schreibe uns eine E-Mail :)
+  utter_continue:
+  - text: Um weiter zu machen, klicke auf das aktuelle Level und absolviere die Aufgaben oder deaktiviere den Klassenraum-Schalter.
+  utter_indecent:
+  - text: Ich kläre dich über Datenschutz auf, nicht über Sexualität!
+  utter_offense:
+  - text: Denkst du wirklich? Gebe mir doch gerne konstruktives feedback, damit ich mit deinen Worten auch was anfangen kann.
+  - text: Egal was du über mich sagst, ich bin stolz auf mich!
+  utter_friend:
+  - text: Ich finde dich auch toll!
+  - text: Wie nett von dir! Ich finde dich auch super!
 actions: []
 forms: {}
 e2e_actions: []

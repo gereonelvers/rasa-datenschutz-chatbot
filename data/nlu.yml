@@ -12,6 +12,8 @@ nlu:
     - gutenmorgen
     - Guten Tag
     - hey
+    - Hey
+    - hallo
 - intent: goodbye
   examples: |
     - Adios
@@ -32,6 +34,8 @@ nlu:
     - natürlich
     - das klingt gut
     - korrekt
+    - ok
+    - okay
 - intent: deny
   examples: |
     - nö
@@ -74,6 +78,7 @@ nlu:
     - nicht sehr gut
     - so traaurig
     - so traurig
+    - Mir geht es schlecht
 - intent: bot_challenge
   examples: |
     - Bist du ein Bot?
@@ -81,12 +86,54 @@ nlu:
     - Spreche ich mit einem Bot?
     - spreche ich mit einem Menschen?
     - am I talking to a bot?
-- intent: out_of_scope
+    - Wer bist du?
+- intent: dsgvo
   examples: |
-    - dasdas
     - DSGVO
-    - dsgvo
-- intent: greeting
+    - Erzähle mir etwas über DSGVO
+    - Was heißt dsgvo
+    - Was ist die dsgvo
+- intent: verarbeitung
   examples: |
-    - Hey
-    - hi!
+    - Was versteht man unter Verarbeitung?
+    - was versteht man unter datenverarbeitung?
+- intent: betroffene_Person
+  examples: |
+    - Was ist eine betroffene Person?
+- intent: possibilities
+  examples: |
+    - Was kannst du machen?
+    - Was kann ich dich fragen?
+    - Was kannst du?
+    - Wozu gibt es dich?
+- intent: definitionen
+  examples: |
+    - Definitionen
+- intent: help
+  examples: |
+    - help
+    - hilfe
+    - kannst du mir helfen?
+- intent: continue
+  examples: |
+    - weiter
+- intent: indecent
+  examples: |
+    - penis
+    - sex
+    - titten
+- intent: offense
+  examples: |
+    - du bist doof
+    - du bist scheiße
+    - arschloch
+- intent: friend
+  examples: |
+    - ich mag dich!
+    - du bist toll!
+    - ich liebe dich
+    - du bist super
+- intent: restart
+  examples: |
+    - restart
+    - neustarten
